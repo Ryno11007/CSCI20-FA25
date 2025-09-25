@@ -22,15 +22,15 @@ int main () {
 
     std::vector<int> potatoe = {'6' , '4'};
 
-    std::printf("%i\n,", potatoe.at(1));
+    std::printf("%i\n,", potatoe.at(0));
 
     std::vector<int> butte = {'5' , '2'};
 
     std::printf("%i\n,", butte.at(0));
 
-    std::vector<int> red = {'2' , '1'};
+    std::vector<int> red = {'4' , '1'};
 
-    std::printf("%i\n,", red.at(1));
+    std::printf("%i\n,", red.at(0));
 
     return 0;
 }
