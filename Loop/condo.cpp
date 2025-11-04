@@ -1,0 +1,15 @@
+#include <cstdio>
+
+int main() {
+    int a = 1;
+    int b = 1;
+    int c = 10;
+    bool check = true;
+    while (check) {
+        if (a < c) { c = c - a; }
+        else { check = false; }
+        printf("c is equal to %d\n" , c);
+    }
+
+    return 0;
+}
