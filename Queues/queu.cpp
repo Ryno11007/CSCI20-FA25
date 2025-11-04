@@ -17,6 +17,14 @@ vector<int> push_q(vector<int> q, int e) {
     return q;
 }
 
+
+int pop_q(vector<int> q) {
+    int r = q[0];
+    q.erase(q.begin());
+    return r; 
+}
+
+
 int main() {
     vector<int> q = {};
 
