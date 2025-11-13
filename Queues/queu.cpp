@@ -1,9 +1,4 @@
-#include <cstdio>
-#include <vector>
-
-
-using std::printf;
-using std::vector;
+#include "header.hpp"
 
 void print_queue(const vector<int>& q) {
     for (size_t i = 0; i < q.size(); i++) {
