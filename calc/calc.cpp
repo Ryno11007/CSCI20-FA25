@@ -26,7 +26,7 @@ stack<int> evaluate (stack<int> st) {
         st.pop();
         int z = st.top();
         st.pop();
-        // check stack to see if anything is left
+        
         if (st.empty()) {
             st.push(addition(y,z));
         } else {
