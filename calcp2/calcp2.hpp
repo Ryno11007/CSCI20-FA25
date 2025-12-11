@@ -1,5 +1,7 @@
 #include <cstdio>
 #include<stack>
+#include <vector>
+#include <string>
 
 using std::printf;
 using std::stack;
@@ -13,13 +15,13 @@ this obj represents a simple calc taking numbers and evaluating
 
 -problem: representing numbers and operations, solved.
 we need an encoding for the numbers. lets use a struc and operations of our calculator, lets use a struct.
-     strucure houses numbers for eval and characters for operations
+     structure houses numbers for eval and characters for operations
     the operations will be represented by the folowing:
         '+' addition
         '-' subtraction
         '*' multiplication
         '/' division
-        'e' evaluate
+        'e' evaluation (fail safe for evaluatable number detection)
 
     - problem: what are the basic operations of our calculator, solved.
     binary operators on which two numbers will be given (a, b)
@@ -34,23 +36,39 @@ we need an encoding for the numbers. lets use a struc and operations of our calc
         stack of type dicho because dicho assist in evaluation operation encoding
 
 - problem: we need to be able to load the stack in the proper order [unsolved]
+    -get data from the user
+    -how , constructor or function
+    -where, 
 
 - we need a way to evaluate a full stack. [unsolved]
+
+- need to evaluate numeric operations
+-needs to be readable by a human
 
 
 */
 
 class calcp2 {
-    private:
-    struct dicho {
-    int num;
-    char op;
-};
-stack<dicho> st;
-int addition(int, int);
-int subtraction(int, int);
-int multiplication(int, int);
-int division(int, int);
+private:
+    struct clowns {
+        int num;
+        char op;
+    };
+    
+    stack<clowns> clown_bakery;
+    int addition(int, int);
+    int subtraction(int, int);
+    int multiplication(int, int);
+    int division(int, int);
+
+    
 public:
+    calcp2(); //initializes values
+    void load_village();//string of vectors to load stack
+    struct ice_cream; 
+      int flavor;
+      char cone;
+    
 
 };
+
