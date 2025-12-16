@@ -1,8 +1,8 @@
 #include <cstdio>
 #include<stack>
 #include <vector>
-#include <string>
 
+using std::vector;
 using std::printf;
 using std::stack;
 /*
@@ -53,6 +53,10 @@ private:
     struct clowns {
         int num;
         char op;
+        clowns(int a, char b) {
+            num = a;
+            op = b;
+        }
     };
     
     stack<clowns> clown_bakery;
@@ -60,15 +64,30 @@ private:
     int subtraction(int, int);
     int multiplication(int, int);
     int division(int, int);
-
+    
     
 public:
-    calcp2(); //initializes values
-    void load_village();//string of vectors to load stack
-    struct ice_cream; 
+struct ice_cream {
       int flavor;
       char cone;
-    
+      ice_cream(int a, char b) {
+            flavor = a;
+            cone = b;
+      }
+    };
 
-};
+vector<clowns> map_ice_clown(vector<ice_cream>);
+    calcp2(); //initializes values
+
+    
+    
+void village();//string of vectors to load stack
+   
+   
+   
+   
+   
+    };
+      
+
 
